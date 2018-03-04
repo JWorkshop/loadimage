@@ -1,0 +1,47 @@
+{
+  "name": "@jworkshop/loadimage",
+  "version": "0.0.1",
+  "description": "Load image(s) asynchronously.",
+  "author": "jworkshop <john.joydesign@gmail.com>",
+  "keywords": [
+    "load",
+    "image"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/JWorkshop/loadimage.git"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-env": "^1.6.0",
+    "eslint": "^4.7.2"
+  },
+  "main": "./lib/index.js",
+  "scripts": {
+    "build": "babel src -d lib --copy-files"
+  },
+  "babel": {
+    "presets": [
+      "env"
+    ]
+  },
+  "eslintConfig": {
+    "parserOptions": {
+      "ecmaVersion": 8,
+      "sourceType": "module"
+    },
+    "env": {
+      "browser": true,
+      "node": true,
+      "es6": true
+    },
+    "extends": [
+      "eslint:recommended"
+    ],
+    "rules": {
+      "semi": 2,
+      "no-empty": 0
+    }
+  }
+}
